@@ -32,9 +32,15 @@ export const AuthProvider = ({ children }) => {
       text: "You will be logged out!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
+      confirmButtonColor: "#f57428",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, logout!",
+      customClass: {
+        popup: "libre-baskerville-regular",
+        title: "libre-baskerville-bold",
+        confirmButton: "rounded-none",
+        cancelButton: "rounded-none",
+      },
     });
 
     if (result.isConfirmed) {
@@ -50,6 +56,12 @@ export const AuthProvider = ({ children }) => {
           title: "Logged Out!",
           text: "You have been successfully logged out.",
           icon: "success",
+          confirmButtonColor: "#f57428",
+          customClass: {
+            popup: "libre-baskerville-regular",
+            title: "libre-baskerville-bold",
+            confirmButton: "rounded-none",
+          },
         });
       } catch (err) {
         console.error("Unexpected error:", err);
@@ -91,7 +103,6 @@ export const AuthProvider = ({ children }) => {
     return data;
   };
 
-
   const value = {
     supabase,
     session,
@@ -100,7 +111,6 @@ export const AuthProvider = ({ children }) => {
     handleLogout,
     getProfiles,
     getUserProfile,
-    
   };
 
   return (

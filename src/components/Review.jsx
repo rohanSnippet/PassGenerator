@@ -73,9 +73,15 @@ const Review = () => {
       text: "Are you sure, you are about to submit the form",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
+      confirmButtonColor: "#f57428",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, Submit!",
+      customClass: {
+        popup: "libre-baskerville-regular",
+        title: "libre-baskerville-bold",
+        confirmButton: "rounded-none",
+        cancelButton: "rounded-none",
+      },
     });
 
     if (result.isConfirmed) {
