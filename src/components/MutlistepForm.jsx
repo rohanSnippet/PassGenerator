@@ -290,38 +290,24 @@ const MultistepForm = () => {
   // For now, it's removed to prevent the loop.
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 poppins-regular">
-      <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-2xl">
-        {/*  <h2 className="text-3xl font-extrabold text-gray-900 mb-6 text-center">
-          Application Form
-        </h2>
-        {message && (
-          <div
-            className={`p-4 rounded-lg mb-4 text-sm font-medium ${
-              message.includes("successfully")
-                ? "bg-green-100 text-green-700"
-                : "bg-red-100 text-red-700"
-            }`}
-          >
-            {message}
-          </div>
-        )} */}
+    <div className="min-h-screen bg-white flex items-center justify-center p-4 libre-baskerville-regular">
+      <div className="bg-ternary p-8 rounded-none shadow-2xl w-full max-w-2xl">
 
         <div className="flex justify-between items-center border-b pb-4 mb-6">
-          <h2 className="text-3xl font-bold text-gray-900 poppins-extrabold">
+          <h2 className="text-3xl font-bold text-gray-900 libre-baskerville-bold">
             Application Form
           </h2>
           <div className="space-x-4">
             {" "}
             <button
               onClick={() => navigate("/")}
-              className="bg-gradient-to-br from-indigo-500 to-indigo-400 shadow-sm shadow-purple-500  hover:bg-indigo-600 hover:shadow-lg hover:shadow-indigo-400 transition px-4 py-2 rounded-lg text-white font-medium"
+              className="bg-secondary shadow-sm source-sans-medium shadow-gray-300 hover:shadow-md transition px-4 py-2 rounded-none text-white font-medium"
             >
               Go to dashboard
             </button>
             <button
               onClick={handleLogout}
-              className="bg-gradient-to-br from-red-500 to-red-400 shadow-sm shadow-orange-400  hover:bg-red-600 hover:shadow-lg hover:shadow-red-400 transition px-4 py-2 rounded-lg text-white font-medium"
+              className="bg-gradient-to-br from-red-500 to-red-400 shadow-sm shadow-gray-300 source-sans-medium hover:bg-red-600 hover:shadow-md hover:shadow-red-400 transition px-4 py-2 rounded-none text-white font-medium"
             >
               Logout
             </button>
@@ -353,7 +339,7 @@ const MultistepForm = () => {
               id="email"
               value={formData.email}
               disabled
-              className="mt-1 block w-full rounded-md border border-gray-300 bg-gray-100 px-3 py-2 text-gray-500 shadow-sm"
+              className="mt-1 block w-full rounded-none border border-gray-300 bg-gray-100 px-3 py-2 text-gray-500 shadow-sm"
             />
           </div>
 
@@ -380,7 +366,7 @@ const MultistepForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+              className="mt-1 block w-full rounded-none border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             />
           </div>
 
@@ -409,7 +395,7 @@ const MultistepForm = () => {
               value={formData.contact}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+              className="mt-1 block w-full rounded-none border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             />
           </div>
 
@@ -437,7 +423,7 @@ const MultistepForm = () => {
                 value={formData.dob}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                className="mt-1 block w-full rounded-none border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
             </div>
             <div>
@@ -453,7 +439,7 @@ const MultistepForm = () => {
                 id="age"
                 value={formData.age}
                 disabled
-                className="mt-1 block w-full rounded-md border border-gray-300 bg-gray-100 px-3 py-2 text-gray-500 shadow-sm"
+                className="mt-1 block w-full rounded-none border border-gray-300 bg-gray-100 px-3 py-2 text-gray-500 shadow-sm"
               />
             </div>
           </div>
@@ -480,7 +466,7 @@ const MultistepForm = () => {
               value={formData.gender}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+              className="mt-1 block w-full rounded-none border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             >
               <option value="" disabled>
                 Select Gender
@@ -505,7 +491,7 @@ const MultistepForm = () => {
               value={formData.category}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+              className="mt-1 block w-full rounded-none border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             >
               <option value="" disabled>
                 Select Category
@@ -530,17 +516,17 @@ const MultistepForm = () => {
 
             {/* Conditionally render the image preview or the file input */}
             {photoUrl ? (
-              <div className="flex items-center gap-4 p-3 border rounded-lg bg-green-50 border-green-300">
+              <div className="flex items-center gap-4 p-3 border rounded-none bg-green-50 border-green-300">
                 {/* Image/Preview */}
                 {photoUrl.endsWith(".pdf") ? (
-                  <div className="w-12 h-12 flex items-center justify-center bg-red-100 text-red-600 rounded">
+                  <div className="w-12 h-12 flex items-center justify-center bg-red-100 text-red-600 rounded-none">
                     PDF
                   </div>
                 ) : (
                   <img
                     src={signedURL}
                     alt="Uploaded file"
-                    className="w-12 h-12 rounded object-cover border"
+                    className="w-12 h-12 rounded-none object-cover border"
                   />
                 )}
                 {/* File info + actions */}
@@ -551,7 +537,7 @@ const MultistepForm = () => {
                   <div className="flex gap-2 mt-1">
                     <label
                       htmlFor="photoFile"
-                      className="px-3 py-1 text-xs bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-600"
+                      className="px-3 py-1 text-xs bg-secondary text-white rounded-none cursor-pointer"
                     >
                       Change
                     </label>
@@ -561,7 +547,7 @@ const MultistepForm = () => {
                         setPhotoUrl(null);
                         setSignedURL(null);
                       }}
-                      className="px-3 py-1 text-xs bg-red-500 text-white rounded hover:bg-red-600"
+                      className="px-3 py-1 text-xs bg-red-500 text-white rounded-none hover:bg-red-600"
                     >
                       Remove
                     </button>
@@ -585,7 +571,7 @@ const MultistepForm = () => {
                 onChange={handleFileChange}
                 accept="image/jpeg, image/png, image/gif, application/pdf"
                 required
-                className="mt-1 block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer focus:outline-none bg-gray-50 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+                className="mt-1 block w-full text-sm text-gray-900 border border-gray-300 rounded-none cursor-pointer focus:outline-none bg-gray-50 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-secondary hover:file:bg-blue-100"
               />
             )}
           </div>
@@ -604,7 +590,7 @@ const MultistepForm = () => {
               value={formData.district}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+              className="mt-1 block w-full rounded-none border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             >
               <option value="" disabled>
                 Select District
@@ -640,7 +626,7 @@ const MultistepForm = () => {
               value={formData.highestQualification}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+              className="mt-1 block w-full rounded-none border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             ></textarea>
           </div>
 
@@ -648,10 +634,10 @@ const MultistepForm = () => {
           <button
             type="submit"
             disabled={!isFormValid || isLoading}
-            className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white ${
+            className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-none shadow-sm text-sm font-medium text-white ${
               !isFormValid || isLoading
-                ? "bg-indigo-300 cursor-not-allowed"
-                : "bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                ? "bg-black/30 cursor-not-allowed"
+                : "bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
             }`}
           >
             {isLoading ? "Submitting..." : "Save & Proceed"}

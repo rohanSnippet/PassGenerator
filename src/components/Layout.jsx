@@ -2,7 +2,7 @@ import React from 'react';
 
 const Layout = ({ children }) => {
   return (
-    <div className="font-sans antialiased text-gray-900 bg-gray-50 min-h-screen">
+    <div className="font-sans antialiased text-gray-900 bg-white min-h-screen">
       {children}
     </div>
   );

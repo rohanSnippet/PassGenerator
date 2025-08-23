@@ -394,12 +394,12 @@ const PdfDownloader = () => {
       <div className="sticky top-0 z-10 bg-white shadow-md py-4 px-6 flex justify-between items-center">
         <button
           onClick={() => navigate("/dashboard")}
-          className="text-xl font-bold text-white px-3 py-1 rounded-md shadow-sm shadow-indigo-400 bg-indigo-500"
+          className="text-xl text-white px-3 py-1 rounded-none shadow-sm shadow-gray-300 libre-baskerville-bold bg-secondary"
         >
           Dashboard
         </button>
         <button
-          className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg shadow-md transition-colors flex items-center"
+          className="bg-secondary text-white libre-baskerville-bold py-2 px-6 rounded-none shadow-md transition-colors flex items-center"
           onClick={handleGeneratePdf}
         >
           <svg

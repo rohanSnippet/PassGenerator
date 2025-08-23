@@ -114,8 +114,6 @@ const Review = () => {
     }
   };
 
-  console.log(profile);
-
   if (isLoading)
     return (
       <div className="flex justify-center items-center min-h-screen bg-gray-100 poppins-semibold">
@@ -144,24 +142,24 @@ const Review = () => {
     );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-10 px-4 flex items-center justify-center poppins-semibold">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-10 px-4 flex items-center justify-center libre-baskerville-regular">
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-5xl p-8">
         {/* Header */}
         <div className="flex justify-between items-center border-b pb-4 mb-6">
-          <h2 className="text-3xl font-bold text-gray-900 poppins-extrabold">
+          <h2 className="text-3xl font-bold text-gray-900 libre-baskerville-bold">
             Application Review
           </h2>
           <div className="space-x-4">
             {" "}
             <button
               onClick={() => navigate("/")}
-              className="bg-gradient-to-br from-indigo-500 to-indigo-400 shadow-sm shadow-purple-500  hover:bg-indigo-600 hover:shadow-lg hover:shadow-indigo-400 transition px-4 py-2 rounded-lg text-white font-medium"
+              className="bg-secondary shadow-sm hover:shadow-lg hover:shadow-gray-400 shadow-gray-300 transition px-4 py-2 rounded-none text-white source-sans-medium"
             >
               Go to dashboard
             </button>
             <button
               onClick={handleLogout}
-              className="bg-gradient-to-br from-red-500 to-red-400 shadow-sm shadow-orange-400  hover:bg-red-600 hover:shadow-lg hover:shadow-red-400 transition px-4 py-2 rounded-lg text-white font-medium"
+              className="bg-gradient-to-br from-red-500 to-red-400 shadow-sm hover:shadow-gray-400 shadow-gray-300 hover:bg-red-600 hover:shadow-lg transition px-4 py-2 rounded-none text-white source-sans-medium"
             >
               Logout
             </button>
@@ -176,7 +174,7 @@ const Review = () => {
               <img
                 src={signedURL}
                 alt="Passport"
-                className="w-44 h-60 object-cover rounded-xl shadow-lg border-4 border-indigo-100"
+                className="w-44 h-60 object-cover rounded-none shadow-lg border-2 border-gray-200"
               />
             ) : (
               <div className="w-44 h-60 flex items-center justify-center rounded-xl bg-gray-200 text-gray-500 border-4 border-gray-300 shadow-lg">
@@ -211,13 +209,13 @@ const Review = () => {
         <div className="flex justify-center gap-6 mt-10">
           <button
             onClick={() => navigate("/multistep-form")}
-            className="bg-yellow-500 hover:bg-yellow-600 transition px-6 py-2 rounded-lg text-white font-semibold shadow-md"
+            className="bg-black transition px-6 py-2 hover:shadow-lg hover:shadow-gray-400 rounded-none text-white source-sans-regular shadow-sm shadow-gray-200"
           >
             Edit
           </button>
           <button
             onClick={handleSubmit}
-            className="bg-green-600 hover:bg-green-700 transition px-6 py-2 rounded-lg text-white font-semibold shadow-md"
+            className="bg-secondary source-sans-regular hover:shadow-lg hover:shadow-gray-400 shadow-gray-300 transition px-6 py-2 rounded-none text-white shadow-sm"
           >
             Submit
           </button>
