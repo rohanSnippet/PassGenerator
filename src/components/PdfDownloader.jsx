@@ -293,7 +293,7 @@ const ReportTemplate = ({ profile }) => {
           PASS ID: {profile?.user_pass_id || "AEG-2025-XXXXX"}
         </div>
 
-        <div style={styles.securityFeatures}>
+       {/*  <div style={styles.securityFeatures}>
           <div style={styles.securityFeature}>
             <div>Hologram</div>
             <div
@@ -324,7 +324,7 @@ const ReportTemplate = ({ profile }) => {
               ◑
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div style={styles.footer}>
           <p>
