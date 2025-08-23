@@ -258,6 +258,7 @@ const MultistepForm = () => {
           age,
           gender,
           category,
+          event_name:"JALNA",
           passport_photo_url: finalPhotoUrl,
           district,
           highest_qualification: highestQualification,
