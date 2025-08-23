@@ -25,11 +25,13 @@ const Signup = () => {
       email,
       password,
     });
+    console.log(data)
 
     if (data.user?.identities?.length === 0) setError("User already exists !!");
 
     if (error) {
       setError(error.message);
+      console.log(error)
     } else if (data.user) {
       setMessage(
         "Sign up successful! Please check your email for a verification link. Redirecting to login..."
