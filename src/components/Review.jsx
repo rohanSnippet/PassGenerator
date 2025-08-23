@@ -27,7 +27,7 @@ const Review = () => {
       .join("");
     const paddedSeq = String(sequence).padStart(4, "0");
 
-    return `${initials}${year}${paddedSeq}`;
+    return `${initials}-JLN${year}${paddedSeq}`;
   }
 
   useEffect(() => {

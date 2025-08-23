@@ -270,20 +270,20 @@ const ReportTemplate = ({ profile }) => {
             <div style={styles.detailRow}>
               <div style={styles.detailLabel}>Event:</div>
               <div style={styles.detailValue}>
-                {profile?.event_name || "AEG Annual Summit 2023"}
+                {profile?.event_name || "AEG Jalna Seminar 2025"}
               </div>
             </div>
             <div style={styles.detailRow}>
               <div style={styles.detailLabel}>Date:</div>
               <div style={styles.detailValue}>
-                {profile?.event_date || "November 15-17, 2023"}
+                {profile?.event_date || "August 24th, 2025"}
               </div>
             </div>
             <div style={styles.detailRow}>
               <div style={styles.detailLabel}>Location:</div>
               <div style={styles.detailValue}>
                 {profile?.event_location ||
-                  "Convention Center, Metropolitan City"}
+                  "Social Justice Hall, Near Collector Office, Jalna"}
               </div>
             </div>
           </div>
