@@ -107,6 +107,12 @@ const Review = () => {
           title: "Form Submitted Successfully!",
           text: "You are successfully registered for the event.",
           icon: "success",
+          confirmButtonColor: "#f57428",
+          customClass: {
+            popup: "libre-baskerville-regular",
+            title: "libre-baskerville-bold",
+            confirmButton: "rounded-none",
+          },
         });
         setMessage("✅ Application submitted successfully!");
         navigate("/dashboard");
